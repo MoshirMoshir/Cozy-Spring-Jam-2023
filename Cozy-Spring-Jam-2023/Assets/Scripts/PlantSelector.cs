@@ -9,11 +9,9 @@ public class PlantSelector : MonoBehaviour
     public Sprite plantIcon;             // the image component of the plant button
 
     static public Plant selectedPlant;
-    
-
     private GameObject currentPlant;   // the currently selected plant object
     private Sprite currentSprite;      // the sprite for the currently selected plant
-    private bool isPlacing = false; // Flag to indicate if we're in "plant placement" mode
+    public static bool isPlacing = false; // Flag to indicate if we're in "plant placement" mode
 
      void Update()
     {
@@ -31,6 +29,11 @@ public class PlantSelector : MonoBehaviour
                 // Update the position of the plant prefab to follow the mouse
                 currentPlant.transform.position = GetMouseWorldPosition();
             }
+        }
+
+        if (!isPlacing && currentPlant != null)
+        {
+            OnPlotClicked();
         }
     }
 
@@ -54,16 +57,19 @@ public class PlantSelector : MonoBehaviour
 
         // Sets into placing mode [see Update()]
         isPlacing = true;
+
+
+        // Add button that lets you cancel plant
     }
 
     // Method called when the player clicks on a plot
-    public void OnPlotClicked(GameObject plot)
+    public void OnPlotClicked(/**GameObject plot**/)
     {
         // Set the plant to the plot
-        currentPlant.transform.position = plot.transform.position;
+        //currentPlant.transform.position = plot.transform.position;
 
         // Set the plant sprite to the plot
-        currentPlant.GetComponent<SpriteRenderer>().sprite = currentSprite;
+        //currentPlant.GetComponent<SpriteRenderer>().sprite = currentSprite;
 
         // Disable the follow mouse behavior
         isPlacing = false;

@@ -10,6 +10,7 @@ public class PlotContainer : MonoBehaviour
     //public GameObject plantPrefab;
 
     private Image image;
+    private bool containsPlant = false;
 
     void Start ()
     {
@@ -18,8 +19,9 @@ public class PlotContainer : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (PlantSelector.selectedPlant != null)
+        if (PlantSelector.selectedPlant != null && containsPlant == false)
         {
+            containsPlant = true;
             // Instantiate the plantPrefab at the plot's position and rotation
             //GameObject newPlant = Instantiate(plantPrefab, transform.position, transform.rotation);
             
@@ -36,7 +38,7 @@ public class PlotContainer : MonoBehaviour
             image.enabled = !image.enabled;
             
             // Reset the selected plant
-            PlantSelector.selectedPlant = null;
+            PlantSelector.isPlacing = false;
         }
     }
 
