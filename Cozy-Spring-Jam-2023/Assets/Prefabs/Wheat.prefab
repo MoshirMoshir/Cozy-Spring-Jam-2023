@@ -46,9 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Wheat
-  growthChance: 100
-  growthRate: 1
+  growthChance: 0.2
   pointsGiven: 1
+  maxStage: 3
+  cost: 10
   sprite:
   - {fileID: -1689741628, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
   - {fileID: 980297085, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}

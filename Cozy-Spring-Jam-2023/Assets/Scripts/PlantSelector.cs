@@ -8,7 +8,7 @@ public class PlantSelector : MonoBehaviour
     public GameObject plantPrefab;      // the prefab for the plant object
     public Sprite plantIcon;             // the image component of the plant button
 
-    static public Plant selectedPlant;
+    public static Plant selectedPlant;
     private GameObject currentPlant;   // the currently selected plant object
     private Sprite currentSprite;      // the sprite for the currently selected plant
     public static bool isPlacing = false; // Flag to indicate if we're in "plant placement" mode
@@ -48,18 +48,18 @@ public class PlantSelector : MonoBehaviour
     // Method called when the plant button is clicked
     public void OnPlantButtonClicked()
     {
-        // Create the plant object from the prefab
-        currentPlant = Instantiate(plantPrefab);
-        selectedPlant = plantPrefab.GetComponent<Plant>();
+            // Create the plant object from the prefab
+            currentPlant = Instantiate(plantPrefab);
+            selectedPlant = plantPrefab.GetComponent<Plant>();
 
-        // Get the sprite from the plant button
-        currentSprite = plantIcon;
+            // Get the sprite from the plant button
+            currentSprite = plantIcon;
 
-        // Sets into placing mode [see Update()]
-        isPlacing = true;
+            // Sets into placing mode [see Update()]
+            isPlacing = true;
 
 
-        // Add button that lets you cancel plant
+            // Add button that lets you cancel plant
     }
 
     // Method called when the player clicks on a plot
@@ -72,10 +72,14 @@ public class PlantSelector : MonoBehaviour
         //currentPlant.GetComponent<SpriteRenderer>().sprite = currentSprite;
 
         // Disable the follow mouse behavior
-        isPlacing = false;
-        Destroy(currentPlant);
-        currentPlant = null;
-        currentSprite = null;
+        if (TimeManager.energy >= selectedPlant.cost)
+        {
+            TimeManager.energy = TimeManager.energy - selectedPlant.cost;
+            isPlacing = false;
+            Destroy(currentPlant);
+            currentPlant = null;
+            currentSprite = null;
+        }
         
     }
 }

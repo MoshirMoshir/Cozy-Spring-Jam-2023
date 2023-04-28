@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class PlotContainer : MonoBehaviour
 {
     public Plant plant;
+    public int growthStage = 0;
+    public static int day = 1;
 
     //public GameObject plantPrefab;
 
@@ -15,6 +17,15 @@ public class PlotContainer : MonoBehaviour
     void Start ()
     {
         image = this.GetComponent<Image>();
+    }
+
+    void Update()
+    {
+        if (containsPlant && day < TimeManager.day)
+        {
+            passDay();
+            day++;
+        }
     }
 
     private void OnMouseDown()
@@ -34,17 +45,23 @@ public class PlotContainer : MonoBehaviour
             // Attach the PlantData component to the new plant
             plant = PlantSelector.selectedPlant;
 
-            image.sprite = plant.sprite[0];
+            image.sprite = plant.sprite[growthStage];
             image.enabled = !image.enabled;
             
             // Reset the selected plant
             PlantSelector.isPlacing = false;
+            
         }
     }
-
-    private void passDay()
+    
+    public void passDay()
     {
-         
+        if (Random.Range(1f, 0f) < plant.growthChance&& growthStage < plant.maxStage)
+        {
+            growthStage++;
+            image.sprite = plant.sprite[growthStage];
+        }
+        
     }
 
 }
