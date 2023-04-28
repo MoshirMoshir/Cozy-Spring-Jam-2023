@@ -9,6 +9,8 @@ public class Plant : MonoBehaviour
     public float growthRate;        // the speed at which the plant grows
     public int pointsGiven;         // the number of points the plant gives when it grows
 
+    public Sprite[] sprite;
+
     // Method to get the growth chance of the plant
     public float GetGrowthChance()
     {
