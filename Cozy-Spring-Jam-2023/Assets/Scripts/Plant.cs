@@ -9,6 +9,7 @@ public class Plant : MonoBehaviour
     public int pointsGiven;         // the number of points the plant gives when it grows
     public int maxStage;
     public int cost;
+    public int[] weatherNeeded;
 
     public Sprite[] sprite;
 
