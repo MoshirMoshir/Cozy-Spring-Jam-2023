@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Wheat
-  growthChance: 0.2
+  growthChance: 0.5
   pointsGiven: 1
   maxStage: 3
   cost: 10

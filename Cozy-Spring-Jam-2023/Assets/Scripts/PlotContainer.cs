@@ -8,6 +8,7 @@ public class PlotContainer : MonoBehaviour
     public Plant plant;
     public int growthStage = 0;
     public static int day = 1;
+    public Text harvestedTextPrefab;
 
     //public GameObject plantPrefab;
 
@@ -26,11 +27,12 @@ public class PlotContainer : MonoBehaviour
             passDay();
             day++;
         }
+
     }
 
     private void OnMouseDown()
     {
-        if (PlantSelector.selectedPlant != null && containsPlant == false)
+        if (PlantSelector.selectedPlant != null && !containsPlant && PlantSelector.isPlacing)
         {
             containsPlant = true;
             // Instantiate the plantPrefab at the plot's position and rotation
@@ -52,6 +54,51 @@ public class PlotContainer : MonoBehaviour
             PlantSelector.isPlacing = false;
             
         }
+
+        if (growthStage == plant.maxStage)
+        {
+            StartCoroutine(DisplayHarvestedText());
+
+            //Set Plot to Empty
+            containsPlant = false;
+            image.enabled = !image.enabled;
+            plant = null;
+            growthStage = 0;
+        }
+    }
+
+    IEnumerator DisplayHarvestedText()
+    {
+        // create the text object
+        GameObject textObj = new GameObject("HarvestedText");
+        textObj.transform.position = transform.position + new Vector3(0, 1, 0);
+
+        // add the text component
+        //Font font = Resources.Load<Font>("DeterminationMonoWebRegular-Z5oq");
+        //font.material = Resources.Load<Material>("DeterminationMonoWebRegular-Z5oq");
+        //font.material.mainTexture = Resources.Load<Texture>("DeterminationMonoWebRegular-Z5oq");
+        
+        TextMesh textMesh = textObj.AddComponent<TextMesh>();
+    
+        textMesh.text = "Harvested!";
+        textMesh.fontSize = 50;
+        textMesh.characterSize = 0.1f;
+        textMesh.color = Color.yellow;
+        //textMesh.font = font;
+        
+
+        // animate the text
+        float duration = .6f;
+        float t = 0f;
+        while (t < duration)
+        {
+            textObj.transform.position += new Vector3(0, 0.003f, 0);
+            t += Time.deltaTime;
+            yield return null;
+        }
+
+        // destroy the text object
+        Destroy(textObj);
     }
     
     public void passDay()
