@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class EnergyTracker : MonoBehaviour
+public class DayTextTracker : MonoBehaviour
 {
     // Set reference to self
     public GameObject text;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,6 @@ public class EnergyTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.GetComponent<TextMeshProUGUI>().text = TimeManager.energy.ToString();
+        text.GetComponent<TextMeshProUGUI>().text = TimeManager.day.ToString();
     }
 }

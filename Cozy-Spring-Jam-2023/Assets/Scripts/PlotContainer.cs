@@ -56,7 +56,7 @@ public class PlotContainer : MonoBehaviour
     
     public void passDay()
     {
-        if (Random.Range(1f, 0f) < plant.growthChance&& growthStage < plant.maxStage)
+        if (Random.Range(1f, 0f) < plant.growthChance && growthStage < plant.maxStage && TimeManager.weather == plant.weatherNeeded[growthStage])
         {
             growthStage++;
             image.sprite = plant.sprite[growthStage];
