@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Potato
-  growthChance: 0.9
+  growthChance: 0.8
   pointsGiven: 2
   maxStage: 3
   cost: 0
-  weatherNeeded: 02000000020000000100000001000000
+  weatherNeeded: 01000000020000000100000002000000
   sprite:
   - {fileID: 1789756644, guid: 26e9659fbec07a644903e299531b8861, type: 3}
   - {fileID: 78058214, guid: 26e9659fbec07a644903e299531b8861, type: 3}

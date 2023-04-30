@@ -46,16 +46,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Strawberry
-  growthChance: 0.7
+  growthChance: 0.5
   pointsGiven: 2
-  maxStage: 3
+  maxStage: 8
   cost: 0
-  weatherNeeded: 01000000010000000100000001000000
+  weatherNeeded: 020000000300000001000000020000000300000001000000020000000400000002000000
   sprite:
-  - {fileID: -1689741628, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 980297085, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 1408596320, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  - {fileID: -617781799, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+  - {fileID: -115521185, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+  - {fileID: -951451801, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+  - {fileID: -240166157, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+  - {fileID: 709358399, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+  - {fileID: -920343228, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+  - {fileID: -1200501243, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+  - {fileID: -910478334, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+  - {fileID: 1203943617, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
   stageUnlock: 8
 --- !u!212 &7522710305016576833
 SpriteRenderer:
@@ -98,7 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: -1218177985
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  m_Sprite: {fileID: 1203943617, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

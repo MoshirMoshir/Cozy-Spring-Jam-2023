@@ -46,16 +46,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Watermelon
-  growthChance: 0.8
+  growthChance: 0.6
   pointsGiven: 2
-  maxStage: 3
+  maxStage: 7
   cost: 0
-  weatherNeeded: 01000000010000000100000001000000
+  weatherNeeded: 0200000001000000020000000400000003000000020000000300000001000000
   sprite:
-  - {fileID: -1689741628, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 980297085, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 1408596320, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  - {fileID: 1086026457, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
+  - {fileID: 1666086405, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
+  - {fileID: -636709154, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
+  - {fileID: 1181750398, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
+  - {fileID: -1039153409, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
+  - {fileID: 152606387, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
+  - {fileID: -1369789672, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
+  - {fileID: 2084441596, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
   stageUnlock: 6
 --- !u!212 &7522710305016576833
 SpriteRenderer:
@@ -98,7 +102,7 @@ SpriteRenderer:
   m_SortingLayerID: -1218177985
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  m_Sprite: {fileID: 2084441596, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

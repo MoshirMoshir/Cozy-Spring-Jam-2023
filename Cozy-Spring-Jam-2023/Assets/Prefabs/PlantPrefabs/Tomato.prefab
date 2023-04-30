@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Tomato
-  growthChance: 0.8
+  growthChance: 0.7
   pointsGiven: 2
   maxStage: 5
   cost: 0

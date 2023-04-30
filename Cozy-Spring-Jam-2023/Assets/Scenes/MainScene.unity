@@ -593,6 +593,14 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 27
       objectReference: {fileID: 0}
+    - target: {fileID: 8274959335528377953, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1203943617, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
+    - target: {fileID: 8274959336198936567, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
+      propertyPath: plantIcon
+      value: 
+      objectReference: {fileID: 1203943617, guid: 7fba6f4e88a57f44a8e2821e00e34ddf, type: 3}
     - target: {fileID: 8274959336198936567, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
       propertyPath: plantPrefab
       value: 
@@ -1671,6 +1679,14 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 27
       objectReference: {fileID: 0}
+    - target: {fileID: 8274959335528377953, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2084441596, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
+    - target: {fileID: 8274959336198936567, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
+      propertyPath: plantIcon
+      value: 
+      objectReference: {fileID: 2084441596, guid: 704a90da6e3f24e45a54d638dda5709b, type: 3}
     - target: {fileID: 8274959336198936567, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
       propertyPath: plantPrefab
       value: 
@@ -2503,6 +2519,14 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 8274959335528377953, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -336884986, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+    - target: {fileID: 8274959336198936567, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
+      propertyPath: plantIcon
+      value: 
+      objectReference: {fileID: -336884986, guid: 7f94c601333afd1439fea282fb572710, type: 3}
     - target: {fileID: 8274959336198936567, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
       propertyPath: plantPrefab
       value: 
@@ -3400,6 +3424,14 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 8274959335528377953, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1141150706, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
+    - target: {fileID: 8274959336198936567, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
+      propertyPath: plantIcon
+      value: 
+      objectReference: {fileID: 1141150706, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
     - target: {fileID: 8274959336198936567, guid: fb5b82b3db9d9d24cab825f4f2317932, type: 3}
       propertyPath: plantPrefab
       value: 

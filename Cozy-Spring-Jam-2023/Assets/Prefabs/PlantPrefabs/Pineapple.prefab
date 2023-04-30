@@ -46,16 +46,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Pineapple
-  growthChance: 0.7
+  growthChance: 0.6
   pointsGiven: 2
-  maxStage: 3
+  maxStage: 7
   cost: 0
-  weatherNeeded: 01000000010000000100000001000000
+  weatherNeeded: 0200000003000000020000000100000003000000040000000300000004000000
   sprite:
-  - {fileID: -1689741628, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 980297085, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 1408596320, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  - {fileID: -1445858496, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
+  - {fileID: -268498180, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
+  - {fileID: 864164160, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
+  - {fileID: 448336, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
+  - {fileID: -692381682, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
+  - {fileID: -223052048, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
+  - {fileID: -1948651343, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
+  - {fileID: 1141150706, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
   stageUnlock: 7
 --- !u!212 &7522710305016576833
 SpriteRenderer:
@@ -98,7 +102,7 @@ SpriteRenderer:
   m_SortingLayerID: -1218177985
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  m_Sprite: {fileID: 1141150706, guid: e20fa0141d6dcb24a993e7460d346ed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

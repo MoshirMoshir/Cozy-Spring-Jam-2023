@@ -46,16 +46,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Dragonfruit
-  growthChance: 0.7
+  growthChance: 0.4
   pointsGiven: 2
-  maxStage: 3
+  maxStage: 11
   cost: 0
-  weatherNeeded: 01000000010000000100000001000000
+  weatherNeeded: 010000000200000001000000020000000300000002000000010000000300000004000000020000000400000001000000
   sprite:
-  - {fileID: -1689741628, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 980297085, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 1408596320, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
-  - {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  - {fileID: 1971605248, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: 744298857, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: 1577199399, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: 1351451899, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: -1227451675, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: 62549635, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: -1945830878, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: 1996075807, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: 698723937, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: 1775043806, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: 637231923, guid: 7f94c601333afd1439fea282fb572710, type: 3}
+  - {fileID: -336884986, guid: 7f94c601333afd1439fea282fb572710, type: 3}
   stageUnlock: 9
 --- !u!212 &7522710305016576833
 SpriteRenderer:
@@ -98,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: -1218177985
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  m_Sprite: {fileID: -336884986, guid: 7f94c601333afd1439fea282fb572710, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

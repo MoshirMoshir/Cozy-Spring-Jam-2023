@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantName: Carrot
-  growthChance: 0.9
+  growthChance: 0.8
   pointsGiven: 1
   maxStage: 3
   cost: 0
