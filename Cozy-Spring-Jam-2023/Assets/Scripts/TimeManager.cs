@@ -29,21 +29,33 @@ public class TimeManager : MonoBehaviour
     {
         day++;
         //Debug.Log("NextDay called, weather is: " + weather.ToString());
+        //Debug.Log("The game stage is at: "+ stage.ToString());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (tmp < stage && stage < 12)
+        if (tmp < stage && stage < 9)
             {
                 tmp = stage;
                 plantStages[stage - 1].SetActive(true);
                 plotStages[stage - 1].SetActive(true);
             }
 
-        if (stage == 12)
+        if (stage == 9)
         {
+            day = 0;
+            stage = 0;
+            tmp = 0;
             SceneManager.LoadScene("Win");
+        }
+
+        if (day > 365)
+        {
+            day = 0;
+            stage = 0;
+            tmp = 0;
+            SceneManager.LoadScene("GameOver");
         }
     }
         

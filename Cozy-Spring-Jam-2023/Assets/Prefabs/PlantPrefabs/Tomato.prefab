@@ -50,7 +50,7 @@ MonoBehaviour:
   pointsGiven: 2
   maxStage: 5
   cost: 0
-  weatherNeeded: 020000000100000002000000010000000200000001000000
+  weatherNeeded: 020000000100000003000000020000000200000003000000
   sprite:
   - {fileID: 1509731488, guid: b4c027cb1b13aed43b3c94415c0f21ff, type: 3}
   - {fileID: -1735710682, guid: b4c027cb1b13aed43b3c94415c0f21ff, type: 3}

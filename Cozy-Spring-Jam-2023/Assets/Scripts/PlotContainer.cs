@@ -122,15 +122,19 @@ public class PlotContainer : MonoBehaviour
     
     public void passDay()
     {
-        // Plays sparkles if correct weather
-        if (TimeManager.weather == plant.weatherNeeded[growthStage])
+        if (growthStage < plant.maxStage)
         {
-            // Play the sparkle effect
-                GameObject sparkle = Instantiate(sparklePrefab, transform.position, Quaternion.identity);
-                Destroy(sparkle, 1.0f);
+            // Plays sparkles if correct weather
+            if (TimeManager.weather == plant.weatherNeeded[growthStage])
+            {
+                // Play the sparkle effect
+                    GameObject sparkle = Instantiate(sparklePrefab, transform.position, Quaternion.identity);
+                    Destroy(sparkle, 1.0f);
+
+            }
 
         }
-
+        
         if (Random.Range(1f, 0f) < plant.growthChance && growthStage < plant.maxStage && TimeManager.weather == plant.weatherNeeded[growthStage])
         {
             growthStage++;
