@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8986208719238705699}
   - component: {fileID: 7522710305016576833}
   m_Layer: 0
-  m_Name: Carrot
+  m_Name: Pineapple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,17 +45,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c779138dfb3a7b246a270d555495844b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantName: Carrot
+  plantName: Pineapple
   growthChance: 0.7
-  pointsGiven: 1
+  pointsGiven: 2
   maxStage: 3
-  cost: 15
-  weatherNeeded: 02000000020000000200000002000000
+  cost: 0
+  weatherNeeded: 01000000010000000100000001000000
   sprite:
-  - {fileID: -1239389511, guid: 1cd648aec198dea409fde80d9b6b4612, type: 3}
-  - {fileID: -2092361820, guid: 1cd648aec198dea409fde80d9b6b4612, type: 3}
-  - {fileID: -148022745, guid: 1cd648aec198dea409fde80d9b6b4612, type: 3}
-  - {fileID: 1276255350, guid: 1cd648aec198dea409fde80d9b6b4612, type: 3}
+  - {fileID: -1689741628, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  - {fileID: 980297085, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  - {fileID: 1408596320, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  - {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  stageUnlock: 7
 --- !u!212 &7522710305016576833
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97,7 +98,7 @@ SpriteRenderer:
   m_SortingLayerID: -1218177985
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1276255350, guid: 1cd648aec198dea409fde80d9b6b4612, type: 3}
+  m_Sprite: {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

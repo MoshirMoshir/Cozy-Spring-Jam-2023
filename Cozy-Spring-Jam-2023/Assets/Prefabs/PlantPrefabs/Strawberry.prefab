@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8986208719238705699}
   - component: {fileID: 7522710305016576833}
   m_Layer: 0
-  m_Name: Wheat
+  m_Name: Strawberry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,17 +45,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c779138dfb3a7b246a270d555495844b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantName: Wheat
-  growthChance: 0.5
+  plantName: Strawberry
+  growthChance: 0.7
   pointsGiven: 2
   maxStage: 3
-  cost: 10
+  cost: 0
   weatherNeeded: 01000000010000000100000001000000
   sprite:
   - {fileID: -1689741628, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
   - {fileID: 980297085, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
   - {fileID: 1408596320, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
   - {fileID: 2099140546, guid: 987dac3b448cbbf4baa16c864dc5c3a5, type: 3}
+  stageUnlock: 8
 --- !u!212 &7522710305016576833
 SpriteRenderer:
   m_ObjectHideFlags: 0

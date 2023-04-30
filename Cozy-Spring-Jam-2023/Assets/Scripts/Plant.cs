@@ -12,6 +12,7 @@ public class Plant : MonoBehaviour
     public int[] weatherNeeded;
 
     public Sprite[] sprite;
+    public int stageUnlock;
 
 
     void Start()

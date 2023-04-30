@@ -77,14 +77,14 @@ public class PlantSelector : MonoBehaviour
         //currentPlant.GetComponent<SpriteRenderer>().sprite = currentSprite;
 
         // Disable the follow mouse behavior
-        if (TimeManager.energy >= selectedPlant.cost)
-        {
+        //if (TimeManager.energy >= selectedPlant.cost)
+        //{
             TimeManager.energy = TimeManager.energy - selectedPlant.cost;
             isPlacing = false;
             Destroy(currentPlant);
             currentPlant = null;
             currentSprite = null;
-        }
+        //}
         
     }
 }

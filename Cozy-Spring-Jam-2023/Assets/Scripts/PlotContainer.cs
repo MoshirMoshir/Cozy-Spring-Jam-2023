@@ -7,7 +7,7 @@ public class PlotContainer : MonoBehaviour
 {
     public Plant plant;
     public int growthStage = 0;
-    public static int day = 1;
+    private int day;
     public Text harvestedTextPrefab;
 
     //public GameObject plantPrefab;
@@ -28,6 +28,21 @@ public class PlotContainer : MonoBehaviour
             day++;
         }
 
+        if (plant != null)
+        {
+            if (growthStage == plant.maxStage)
+            {
+
+                //Set stage
+                if (plant.stageUnlock > TimeManager.stage)
+                {
+                    TimeManager.stage = plant.stageUnlock;
+                }
+
+                growthStage++;
+            }
+        }
+
     }
 
     private void OnMouseDown()
@@ -35,15 +50,8 @@ public class PlotContainer : MonoBehaviour
         if (PlantSelector.selectedPlant != null && !containsPlant && PlantSelector.isPlacing)
         {
             containsPlant = true;
-            // Instantiate the plantPrefab at the plot's position and rotation
-            //GameObject newPlant = Instantiate(plantPrefab, transform.position, transform.rotation);
-            
-            // Set the parent of the new plant to the plot
-            //newPlant.transform.SetParent(transform);
-            
-            // Set the position of the new plant to be slightly above the plot
-            //newPlant.transform.position += new Vector3(0f, 0.1f, 0f);
-            
+            day = TimeManager.day;
+           
             // Attach the PlantData component to the new plant
             plant = PlantSelector.selectedPlant;
 
@@ -55,9 +63,18 @@ public class PlotContainer : MonoBehaviour
             
         }
 
-        if (growthStage == plant.maxStage)
+        
+        if (growthStage >= plant.maxStage)
         {
             StartCoroutine(DisplayHarvestedText());
+
+            /** Done in Update()
+            //Set stage
+            if (plant.stageUnlock > TimeManager.stage)
+            {
+                TimeManager.stage = plant.stageUnlock;
+            }
+            */
 
             //Set Plot to Empty
             containsPlant = false;
@@ -101,8 +118,10 @@ public class PlotContainer : MonoBehaviour
         Destroy(textObj);
     }
     
+    
     public void passDay()
     {
+
         if (Random.Range(1f, 0f) < plant.growthChance && growthStage < plant.maxStage && TimeManager.weather == plant.weatherNeeded[growthStage])
         {
             growthStage++;
