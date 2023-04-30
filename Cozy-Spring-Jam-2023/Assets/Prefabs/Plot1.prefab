@@ -109,6 +109,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   growthStage: 0
   harvestedTextPrefab: {fileID: 0}
+  sparklePrefab: {fileID: 1798309752738532945, guid: 8ed7d7d8bb695a84dbffacd05f14f956, type: 3}
 --- !u!61 &3233536299059180350
 BoxCollider2D:
   m_ObjectHideFlags: 0

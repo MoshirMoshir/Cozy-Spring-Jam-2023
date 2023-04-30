@@ -11,6 +11,7 @@ public class PlotContainer : MonoBehaviour
     public Text harvestedTextPrefab;
 
     //public GameObject plantPrefab;
+    public GameObject sparklePrefab;
 
     private Image image;
     private bool containsPlant = false;
@@ -121,6 +122,14 @@ public class PlotContainer : MonoBehaviour
     
     public void passDay()
     {
+        // Plays sparkles if correct weather
+        if (TimeManager.weather == plant.weatherNeeded[growthStage])
+        {
+            // Play the sparkle effect
+                GameObject sparkle = Instantiate(sparklePrefab, transform.position, Quaternion.identity);
+                Destroy(sparkle, 1.0f);
+
+        }
 
         if (Random.Range(1f, 0f) < plant.growthChance && growthStage < plant.maxStage && TimeManager.weather == plant.weatherNeeded[growthStage])
         {

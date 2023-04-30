@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeManager : MonoBehaviour
 {
@@ -33,12 +34,17 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tmp < stage)
+        if (tmp < stage && stage < 12)
             {
                 tmp = stage;
                 plantStages[stage - 1].SetActive(true);
                 plotStages[stage - 1].SetActive(true);
             }
+
+        if (stage == 12)
+        {
+            SceneManager.LoadScene("Win");
+        }
     }
         
     
